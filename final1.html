@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Justice</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectTo(value) {
+            switch (value) {
+                case 'home':
+                    window.location.href = 'home.html'; 
+                    break;
+                case 'mission-vision':
+                    window.location.href = 'mission-vision.html'; 
+                    break;
+                case 'language-options':
+                    window.location.href = 'language-options.html'; 
+                    break;
+                case 'privacy-policy':
+                    window.location.href = 'privacy-policy.html'; 
+                    break;
+                case 'about-us':
+                    window.location.href = 'about-us.html'; 
+                    break;
+                case 'contact-us':
+                    window.location.href = 'contact-us.html'; 
+                    break;
+                case 'our-team':
+                    window.location.href = 'our-team.html'; 
+                    break;
+                case 'news':
+                    window.location.href = 'news.html'; 
+                    break;
+                case 'top-stories':
+                    window.location.href = 'top-stories.html';
+                    break;
+                case 'newsletter':
+                    window.location.href = 'newsletter.html'; 
+                    break;
+                case 'programs':
+                    window.location.href = 'programs.html'; 
+                case 'fundraising-events':
+                    window.location.href = 'fundraising-events.html'; 
+                    break;
+                case 'internship-programs':
+                    window.location.href = 'internship-programs.html'; 
+                    break;
+                case 'resources':
+                    window.location.href = 'resources.html'; 
+                    break;
+                case 'careers':
+                    window.location.href = 'careers.html'; 
+                case 'faqs':
+                    window.location.href = 'faqs.html'; 
+                case 'reports':
+                    window.location.href = 'reports.html'; 
+                    break;
+                case 'investigative-reports':
+                    window.location.href = 'investigative-reports.html';
+                    break;
+                case 'sustainability-reports':
+                    window.location.href = 'sustainability-reports.html'; 
+                    break;
+                case 'case-studies':
+                    window.location.href = 'case-studies.html'; 
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 class="center-heading">DEPARTMENT OF JUSTICE</h1>
+        <h1>JUSTICE FOR ALL</h1>
+    </header>
+
+    <nav style="display: flex; justify-content: space-between; align-items: center;">
+        <select onchange="redirectTo(this.value)">
+            <option value="">HOME</option>
+            <option value="case studies">case studies</option>
+            <option value="mission-vision">Mission and Vision</option>
+            <option value="language-options">Language Options</option>
+            <option value="privacy-policy">Privacy Policy and Terms of Use</option>
+        </select>
+        <select onchange="redirectTo(this.value)">
+            <option value="">ABOUT US</option>
+            <option value="contact-us">Contact Us</option>
+            <option value="our-team">Our Team</option>
+        </select>
+        <select onchange="redirectTo(this.value)">
+            <option value="">NEWS</option>
+            <option value="top-stories">Top Stories</option>
+            <option value="newsletter">Newsletter</option>
+        </select>
+        <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+
+  
+  </nav>
+  <p style="color: burlywood;">
+    The Department of Justice in India is responsible for administering justice and ensuring that it is accessible and timely for all.
+  </p>
+  <h2 style="color:white;"> Some of its functions include:</h2>
+  <ul> 
+    <li style="color:white;"> Appointing, removing, and managing the service matters of the Chief Justice of India, Supreme Court judges, High Court judges, and Chief Justices. </li>
+    <li style="color:white;"> Implementing schemes to develop infrastructure for the judiciary </li>
+    <li style="color:white;"> Setting up special courts for speedy trials of sensitive cases </li>
+    <li style="color:white;"> Implementing the E-court project to computerize courts across the country </li>
+    <li style="color:white;"> Providing legal aid to the poor </li>
+    <li style="color:white;"> Providing financial assistance to the National Judicial Academy to train judicial officers</li>
+  </ul>
+  <script src="script.js"></script>
+</body>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+    <div class="chatBot">
+        <header>
+            <h2>ChatBot</h2>
+            <span alt="Close" 
+                  id="cross" 
+                  onclick="cancel()">Your AI partner at your service!</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat-incoming chat">
+                <p>Welcome to department of justice. How can i help you?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea rows="0" cols="17"
+                      placeholder="Enter a message..."></textarea>
+            <button id="sendBTN">Send</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
